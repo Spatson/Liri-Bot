@@ -9,7 +9,7 @@ const client = new Twitter(myKeys.twitter);
 
 switch (process.argv[2]) {
   case "my-tweets":
-    tweetsFunction();
+    tweetFunction();
     break;
 
   case "spotify-this-song":
@@ -25,7 +25,7 @@ switch (process.argv[2]) {
     break;
 }
 
-function tweetsFunction() {
+function tweetFunction() {
   console.log("Tweet Test");
   var params = { screen_name: "LiriUtbc" };
   client.get("statuses/user_timeline", params, function(
